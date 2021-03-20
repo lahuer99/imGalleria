@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Flexbox imGalleria</title>
+	<title>Flexbox | imGalleria</title>
 	<style type="text/css">
+		@font-face{
+			font-family: MrDeHaviland;
+			src:url(./fonts/MrDeHaviland-Regular.ttf);
+		}
+		body{
+			background: #f2e2b3;
+		}
 		h2{
+			text-align: center;
+			font-family: MrDeHaviland;
+			color: white;
+			text-shadow: 10px 0 0 silver;
+			font-size: 145px;
 		}
 		.row{
 			display: flex;
 			flex-wrap: wrap;
+			/*margin: 0 5px;*/
+			background: #ffe6a1;
 		}
 		.column{
+			/*flex:25%;*/
 			width: 24%;
-			padding: 3px 3px;
+			padding: 5px 5px;
 		}
 		.column img{
-			margin-top: 3px;
+			margin-top: 8px;
 			width: 100%;
+			vertical-align: middle;
+			transition:width 0s;
 		}
+/*		img:hover{
+			width: 40%;
+			z-index:3;
+			position: absolute;
+			transition:width 3s;
+		}*/
 	</style>
 </head>
 <body>
