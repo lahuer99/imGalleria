@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		body{
+			background-image: linear-gradient(to bottom right, #b6a3d6, white) ;
+			background-repeat: no-repeat;
+		}
+		#container{
+			margin: 20px auto;
+			width: 90%;
+			height: 90%;
+			border-radius: 10px;
+			background-color: white;
+			box-sizing: border-box;
+			box-shadow: 1em 1em 1.2em -0.6em black;
+			padding: 2em 3em;
+
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+		}
+
+		#container div{
+			width: calc(100%/4);
+			min-width: 200px;
+			box-sizing: border-box;
+			height: 30vh;
+			margin-right: 25px;
+			margin-bottom: 25px;
+			border-radius: 10px;
+			background-color: yellowgreen;
+			border: 1px solid black;
+		}
+
+		@media (max-width: 890px){
+			#container div{
+				margin-bottom: 20px;
+			}
+		}
+
+		@media (max-width: 580px){
+			#container div{
+				margin-right: 0;
+				margin-bottom: 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

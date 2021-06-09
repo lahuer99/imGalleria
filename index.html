@@ -10,12 +10,28 @@
 		body{
 			background: #f2e2b3;
 		}
+		.header{
+			margin: 0;
+		}
 		h2{
 			text-align: center;
 			font-family: MrDeHaviland;
 			color: white;
 			text-shadow: 10px 0 0 silver;
 			font-size: 145px;
+		}
+		.underline{
+			width: 30%;
+			/*height: 7px;*/
+			perspective: 20px;
+			border:solid 5px white;
+			border-color: white transparent transparent transparent;
+			border-radius: 1000px 100px 0 0;
+			color: white;
+			text-shadow: 30px 20px 5px silver;
+			position: relative;
+			top: -145px;
+			left: 300px;
 		}
 		.row{
 			display: flex;
@@ -31,20 +47,22 @@
 			margin-top: 8px;
 			width: 100%;
 			vertical-align: middle;
-			transition:width 0s;
+			border-radius: 20px;
+			transition:width 0.3s ease-in;
 		}
-/*		img:hover{
-			width: 40%;
-			z-index:3;
-			position: absolute;
-			transition:width 3s;
-		}*/
+		.column img:hover{
+			width: 125%;
+			z-index:1;
+			position: relative;
+		}
 	</style>
 </head>
 <body>
-	<h2>
-		imGalleria
-	</h2>
+	<div class="header">
+		<h2>imGalleria</h2>
+		<div class="underline"></div>
+	</div>
+	
 	<div class="row">
 		<div class="column">
 			<img src="./assets/1.jpg" >
